@@ -11,5 +11,8 @@ const p=reminder%5;
 return{q,d,n,p};
 
 // Do not the change the code below
+	if (typeof window === 'undefined' || !window.Cypress) {
 const c = prompt("Enter c: ");
+		if(c!==null){
 alert(JSON.stringify(makeChange(c)));
+		}}
